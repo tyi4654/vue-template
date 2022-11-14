@@ -1,0 +1,74 @@
+/* 全局混入 */
+
+@mixin flex{
+	// 弹性布局
+	display: flex;
+}
+@mixin flex0{
+	flex: 0 0 auto;
+}
+@mixin flex1{
+	flex: 1 1 auto;
+}
+@mixin alignJustify{
+	// 垂直水平居中 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin alignItems{
+	// 垂直居中
+	display: flex;
+	align-items: center;
+}
+@mixin justifyspacec{
+	//两端分散垂直居中布局
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+}
+@mixin directionColumn{
+	// 纵向排列
+	display: flex;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+	align-content: space-between;
+}
+@mixin directionColumnCenter{
+	// 纵向居中排列
+	display: flex;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+    justify-content: center;
+}
+@mixin ellipse {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+@mixin ellipses{
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	white-space: normal;
+	overflow:hidden;
+}
+@mixin ellipses3{
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;
+	white-space: normal;
+	overflow:hidden;
+}
+
+@mixin cutLine {
+	content: "";
+	display: block;
+	height: 2rpx;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: scaleY(.5);
+	background-color: $uni-border-color;
+}
