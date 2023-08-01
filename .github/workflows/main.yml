@@ -23,5 +23,6 @@ jobs:
       - name: Deploy   # 部署
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
+          node-version: 10.16.2 # node版本
           branch: vite-build-src # 部署后提交到那个分支
-          folder: dist # 这里填打包好的目录名称
+          folder: dist # 这里填打包好的目录名称.
