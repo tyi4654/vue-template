@@ -37,7 +37,7 @@ const cdn = {
 }
 
 module.exports = {
-	publicPath: isProduction ? "/pc" : "/",
+	publicPath: isProduction ? "/test" : "/",
 	productionSourceMap: false, // 去除Vue打包后js目录下生成的一些.map文件，用于加速生产环境构建
 	chainWebpack: (config) => {
 		config.plugin("html").tap((args) => {
